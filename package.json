@@ -1,0 +1,26 @@
+{
+  "name": "md-viewctrls",
+  "version": "1.0.0",
+  "description": "My viewctrls project (link) is something I use at work for simple little, out-of-the-way controls in our views. It's still a pretty imperative programming environment (we're working on that...), so tossing some controls in the upper right is convenient.",
+  "main": "md-viewctrls.js",
+  "scripts": {
+    "test": "mocha testrunner.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Made-of-Clay/md-viewctrls.git"
+  },
+  "author": "Adam Leis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Made-of-Clay/md-viewctrls/issues"
+  },
+  "homepage": "https://github.com/Made-of-Clay/md-viewctrls#readme",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.3.0"
+  }
+}
