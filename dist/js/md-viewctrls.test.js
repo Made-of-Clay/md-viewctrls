@@ -32,6 +32,26 @@ describe('md-viewctrls', function () {
             };
             expect(init).to.throw(TypeError);
         });
+        it('should build basic markup', function () {
+            container.mdviewctrls({
+                controls: [{
+                    text: 'Foo',
+                    callback: $.noop
+                }]
+            });
+            let markup = [
+                buttonsWrapper = container.children('.md-viewctrls-btns'),
+                button = buttonsWrapper.children('.md-viewctrls-btn:first'),
+                buttonText = button.children('.md-viewctrls-text'),
+                list = container.children('.md-viewctrls-list'),
+                item = list.children('md-viewctrls-item'),
+                itemText = item.children('.md-viewctrls-text')
+            ];
+
+            markup.forEach(el => {
+                expect(el.length).to.equal(1);
+            });
+        });
         it('should build a control button');
         it('should trigger callback on click of button');
         it('should build up to 2 controls before hiding the rest in vertical dot icon');
